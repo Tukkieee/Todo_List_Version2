@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">
+                Welcome, <input type="text" id="name" placeholder="Enter Your Name">
+            </h2>
+        </section>
+        <section class="create-todo">
+            <h3>CREATE A TODO</h3>
+            <form id="new-todo-form">
+                <h4>Enter your Task</h4>
+                <input type="text" name="content" id="content" placeholder="e.g. sweep">
+                <h4>Pick A category</h4>
+                <div class="options">
+                    <label >
+                        <input type="radio" name="category" id="category1" value="business">
+                        <span class="bubble business"></span>
+                        <div>Business</div>
+                    </label>
+
+                    <label >
+                        <input type="radio" name="category" id="category2" value="personal">
+                        <span class="bubble personal"></span>
+                        <div>Personal</div>
+                    </label>
+
+                    <label >
+                        <input type="radio" name="category" id="category3" value="school">
+                        <span class="bubble school"></span>
+                        <div>School</div>
+                    </label>
+
+                    <label >
+                        <input type="radio" name="category" id="category4" value="uncategorized">
+                        <span class="bubble uncategorized"></span>
+                        <div>Uncategorized</div>
+                    </label>
+                </div>
+                <input type="submit" value="Add Task">
+            </form>
+        </section>
+        <section class="todo-list">
+            <h3>TODO LIST</h3>
+            <div class="list" id="todo-list">
+                <!-- <div class="todo-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble business"></span>
+                    </label>
+                    <div class="todo-content">
+                        <input type="text" value="sweep" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble personal"></span>
+                    </label>
+                    <div class="todo-content">
+                        <input type="text" value="clean" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div> -->
+
+                <!-- <input type="submit" value="Clear Tasks" class="clear"> -->
+            </div>
+        </section>
+    </main>
+<script src="./app.js"></script>
+</body>
+</html>
